@@ -89,7 +89,7 @@ const Navbar = () => {
     <Section>
         <Container>
             <Links>
-            <Logo src= "./img/logo-2.png"/>
+            <Logo src= {`${process.env.PUBLIC_URL}/img/logo-2.png`}/>
             <List>
                 <ListItem><Link href = "#1">Home</Link></ListItem>
                 <ListItem><Link href = "#2">Projects</Link></ListItem>
@@ -98,7 +98,7 @@ const Navbar = () => {
             </List>
             </Links>
             <Icons>
-                <Icon src = "./img/search.png"/>
+                <Icon src = {`${process.env.PUBLIC_URL}/img/search.png`}/>
                 <Button><Link href = "#4">contact</Link></Button>
 
             </Icons>

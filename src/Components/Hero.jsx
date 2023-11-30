@@ -37,7 +37,7 @@ const Color = styled.div`
       color:rgb(106, 193, 239);
 `;
 
-const WhatWeDo = styled.h1`
+const WhatWeDo = styled.div`
       align-items: center;
       gap: 15px;
 `;
@@ -118,17 +118,17 @@ const Hero = () => {
             <Color>Apram Ahuja</Color> </Title>
 
              <WhatWeDo>
-              <Line src = "./img/line.png"/>
+              <Line src={`${process.env.PUBLIC_URL}/img/line.png`}/>
               <SubTitle>Junior @UBC Mathematics & Data Science</SubTitle>
-              <Line src = "./img/line.png"/>
+              <Line src = {`${process.env.PUBLIC_URL}/img/line.png`}/>
              </WhatWeDo>
              <Desc>A Mathematics student from Canada. I aim to deepen my understanding in various areas of technology and product development.</Desc>
-             <Button><Link href = "./resume.pdf" target = "_blank">RESUME</Link></Button>
+             <Button><Link href = {`${process.env.PUBLIC_URL}/resume.pdf`} target = "_blank">RESUME</Link></Button>
         </Left>
 
         <Right>
           {/* 3d model */}
-          <Img src ="./img/moon.png"/>
+          <Img src ={`${process.env.PUBLIC_URL}/img/moon.png`}/>
         </Right>
       </Container>
     </Section>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaGithub } from "react-icons/fa";
 
 
 const Section = styled.div`
@@ -30,13 +31,13 @@ const Wrapper = styled.div`
 const Project = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; 
-  text-align: center; */
+  //align-items: center; 
+  text-align: center; 
 `;
 
 const PostTitle = styled.h3`
     font-family: bold;
-    margin: 0.5rem 0;
+    margin: 0.6rem 0;
 `;
 
 const PostIntro = styled.p`
@@ -93,6 +94,13 @@ const Button = styled.button`
 
 `;
 
+const Github  = styled(FaGithub)`
+  color: white;
+  transform: scale(2);
+  margin: 5%;
+`;
+
+
 
 const Who = () => {
   return (
@@ -100,18 +108,30 @@ const Who = () => {
       <Title id = {2}> PROJECTS </Title>
       <Wrapper>
       <Project>
-         <Link href = "https://www.students.cs.ubc.ca/~bkosch04/new-deliverable.php" target = "_blank"> <Img src ="./img/zoo.png"/> </Link>
+         <Link href = "https://www.students.cs.ubc.ca/~bkosch04/new-deliverable.php" target = "_blank"> <Img src ={`${process.env.PUBLIC_URL}/img/zoo.png`}/> </Link>
             <PostTitle>Zoo Management System</PostTitle>
-            <PostIntro>Queries over Zoo's data using SQL and PHP <Link href = "https://github.com/apramm/ZooManagementSystem" target = "_blank">@styled-icons/boxicons-logos/Github</Link></PostIntro>
+            <PostIntro>PHP Dashboard that queries and displays Zoo data in realtime using Oracle SQL </PostIntro> <Link href = "https://github.com/apramm/ZooManagementSystem" target = "_blank"> <Github /></Link>
       </Project>
-      <Project><Img src ="./img/obs.png"/></Project>
-      <Project><Img src ="./img/asa.png"/></Project>
-      <Project><Img src ="./img/football.png"/></Project>
-      </Wrapper>
-      <ButtonContainer><Button>See More</Button></ButtonContainer>
-      
 
-      
+      <Project>
+      <Link href = "https://github.com/apramm/OnlineBankingSystem" target = "_blank"> <Img src ={`${process.env.PUBLIC_URL}/img/obs.png`}/> </Link>
+            <PostTitle> Online Banking System</PostTitle>
+            <PostIntro>Java Desktop Application performing transactions for users using JSON</PostIntro> <Link href = "https://github.com/apramm/OnlineBankingSystem" target = "_blank"> <Github /></Link>
+      </Project>
+
+      <Project>
+      <Link href = "https://github.com/apramm/ASADatafest" target = "_blank"><Img src ={`${process.env.PUBLIC_URL}/img/asa.png`}/></Link>
+      <PostTitle> Pro Bono Services Consultancy</PostTitle>
+            <PostIntro>Consulted American Bar Association for Pro-bono serivces using Time Series and NLP tools like BERTopic </PostIntro> <Link href = "https://github.com/apramm/ASADatafest" target = "_blank"> <Github /></Link>
+      </Project>
+
+      <Project>
+      <Link href = "https://github.com/jycxu99/group_27_project" target = "_blank"><Img src ={`${process.env.PUBLIC_URL}/img/football.png`}/></Link>
+      <PostTitle>Prediction Model for Life Expectancy of Nations</PostTitle> 
+      <PostIntro>Fitted KNN Regressor on over 3500 observations using TidyVerse in R</PostIntro><Link href = "https://github.com/jycxu99/group_27_project" target = "_blank"> <Github /></Link>
+      </Project>
+      </Wrapper>
+      <ButtonContainer><Button><Link href = "https://github.com/apramm" target = "_blank">See More</Link></Button></ButtonContainer>
     </Section>
   )
 }
