@@ -67,6 +67,15 @@ const Link = styled.a`
         color: lightblue;
     }
 `;
+
+const Contact = styled.a`
+    &:link, &:active, &:focus, &:visited{
+        text-decoration:none;
+        color: white}
+    &:hover{
+        color: black;
+    }
+`;
 const Button = styled.button` 
     width: 100px;
     padding: 10px;
@@ -78,7 +87,7 @@ const Button = styled.button`
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-            color: greenyellow;
+            color: black;
         }
 
 `;
@@ -99,7 +108,7 @@ const Navbar = () => {
             </Links>
             <Icons>
                 <Icon src = {`${process.env.PUBLIC_URL}/img/search.png`}/>
-                <Button><Link href = "#4">contact</Link></Button>
+                <Button><Contact href = "#4">contact</Contact></Button>
 
             </Icons>
         </Container>

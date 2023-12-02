@@ -127,7 +127,7 @@ const Who = () => {
 
       <Project>
       <Link href = "https://github.com/jycxu99/group_27_project" target = "_blank"><Img src ={`${process.env.PUBLIC_URL}/img/football.png`}/></Link>
-      <PostTitle>Prediction Model for Life Expectancy of Nations</PostTitle> 
+      <PostTitle>Predicting Life Expectancy of Nations</PostTitle> 
       <PostIntro>Fitted KNN Regressor on over 3500 observations using TidyVerse in R</PostIntro><Link href = "https://github.com/jycxu99/group_27_project" target = "_blank"> <Github /></Link>
       </Project>
       </Wrapper>

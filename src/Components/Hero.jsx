@@ -68,7 +68,7 @@ const Button = styled.button`
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-            color: pink;
+            color: black;
         }
 
 `;
@@ -78,7 +78,7 @@ const Link = styled.a`
         text-decoration:none;
         color: white}
     &:hover{
-        color: lightblue;
+        color: black;
     }
 `;
 
