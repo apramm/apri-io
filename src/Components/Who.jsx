@@ -98,6 +98,9 @@ const Github  = styled(FaGithub)`
   color: white;
   transform: scale(2);
   margin: 5%;
+  &:hover{
+        color: lightblue;
+    }
 `;
 
 

@@ -16,6 +16,7 @@ const Container = styled.div`
         justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
+
 `;
 
 const Links = styled.div`
@@ -98,7 +99,7 @@ const Navbar = () => {
     <Section>
         <Container>
             <Links>
-            <Logo src= {`${process.env.PUBLIC_URL}/img/logo-2.png`}/>
+            <Link href = "https://apramm.github.io/apri-io"><Logo src= {`${process.env.PUBLIC_URL}/img/logo-2.png`}/></Link>
             <List>
                 <ListItem><Link href = "#1">Home</Link></ListItem>
                 <ListItem><Link href = "#2">Projects</Link></ListItem>
