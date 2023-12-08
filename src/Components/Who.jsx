@@ -49,7 +49,7 @@ const Link = styled.a`
         text-decoration:none;
         color: white}
     &:hover{
-        color: lightblue;
+        color: black;
     }
 `;
 
@@ -89,7 +89,7 @@ const Button = styled.button`
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-            color: green;
+            color: black;
         }
 
 `;
@@ -125,7 +125,7 @@ const Who = () => {
       <Project>
       <Link href = "https://github.com/apramm/ASADatafest" target = "_blank"><Img src ={`${process.env.PUBLIC_URL}/img/asa.png`}/></Link>
       <PostTitle> Pro Bono Services Consultancy</PostTitle>
-            <PostIntro>Consulted American Bar Association for Pro-bono serivces using Time Series and NLP tools like BERTopic </PostIntro> <Link href = "https://github.com/apramm/ASADatafest" target = "_blank"> <Github /></Link>
+            <PostIntro>Analyze ABA pro bono services using Time Series and NLP tools, including BERTopic. </PostIntro> <Link href = "https://github.com/apramm/ASADatafest" target = "_blank"> <Github /></Link>
       </Project>
 
       <Project>

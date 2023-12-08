@@ -103,12 +103,11 @@ const Navbar = () => {
             <List>
                 <ListItem><Link href = "#1">Home</Link></ListItem>
                 <ListItem><Link href = "#2">Projects</Link></ListItem>
-                <ListItem><Link href = "#3">Studio</Link></ListItem>
+                {/* <ListItem><Link href = "#3">Studio</Link></ListItem> */}
 
             </List>
             </Links>
             <Icons>
-                <Icon src = {`${process.env.PUBLIC_URL}/img/search.png`}/>
                 <Button><Contact href = "#4">contact</Contact></Button>
 
             </Icons>

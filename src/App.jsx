@@ -24,7 +24,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Who/>
-      <Works/>
+      {/* <Works/> */}
       <Contact/>
     </Container>
   );
